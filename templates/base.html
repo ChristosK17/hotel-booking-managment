@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <title> {% block title %}{% endblock title %} </title>
+    <style>
+      .footer {
+         position: fixed;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         background-color:#333;
+         color: white;
+         text-align: center;
+         padding-top: 2rem;
+      }
+      </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="home">La Luna</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="login">Log in</a></li>
+        </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        {% block body %}{% endblock body %}
+        <br><br><br><br><br><br><br><br>
+      </div>
+</body>
+
+<div class="footer">
+  <a class="btn btn-primary" style="background-color: #dd4b39;" href="mailto:christoskiokakis@gmail.com" role="button"><i class="fab fa-google"></i></a>
+  <a class="btn btn-primary" style="background-color: #ac2bac;" href="https://www.instagram.com/christoskiokakis/" role="button"><i class="fab fa-instagram"></i></a>
+  <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
+  <br><br>
+  <p style="font-size: 1.2rem;">Since 2021</p>
+</div>
+
+
+</html>

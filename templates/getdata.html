@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %} TEST {% endblock title %}
+{% block body %}
+    <div class="page-header">
+        <h1> Καλωσήρθατε στο Site</h1>
+    </div>
+    <form action="" method="post">
+    <input type="text" name="levar" placeholder="το όνομάσας..." value="{{request.form.levar}}">
+    <button type="submit" value="SendData">Ξεκινήστε</button>
+    </form>
+
+    <p>{{error}}</p>
+{% endblock body %}
